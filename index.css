@@ -1,0 +1,169 @@
+:root{
+    background: #FFF;
+}
+
+nav{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 40px;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    left: 10%;
+}
+
+.logo{
+    width: 74.843px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: #FFF;
+}
+
+.navigation{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.navigation ul{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.splide{
+    position: relative;
+}
+
+.splide__slide img{
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.heroText{
+    top: 30%;
+    left: 25%;
+    width: 52%;
+    position: absolute;
+    z-index: 1;
+}
+
+.splide h1{
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76px; /* 95% */
+    letter-spacing: -1.6px;
+}
+
+.splide p{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.promotion{
+    padding: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promotionTag{
+    color: #DF6951;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.promotionTitle{
+    width: 870px;
+    color: #222;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px; /* 106.25% */
+}
+
+.promotionDescription{
+    width: 610px;
+    color: #222;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+}
+
+.promotionImage{
+    width: 420px;
+    height: 420px;
+    flex-shrink: 0;
+    border-radius: 420px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+.lastMinute{
+    width: 1920px;
+    height: 1012px;
+    flex-shrink: 0;
+    background: #FAFAFA;
+}
+
+.lastMinuteHeading{
+    width: 740px;
+    color: #222;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px; /* 106.25% */
+}
+
+.lastMinuteImage{
+    width: 416px;
+    height: 340px;
+    align-self: stretch;
+    border-radius: 8px;
+}
+
+
+.lastMinuteTitle{
+    color: #222;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+}
+
+.lastMinuteDescription{
+    align-self: stretch;
+    color: #222;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+}

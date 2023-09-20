@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="module">
+        import splidejssplide from 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm'
+        new splidejssplide( '.splide' ).mount();
+    </script>
+
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link href="index.css" rel="stylesheet">
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+
+    <section class="splide">
+        <nav>
+            <ul><img class="logo" src="images/logo.svg"></ul>
+            <div class="navigation">
+                <ul>Home</ul>
+                <ul>About</ul>
+                <ul>Services</ul>
+                <ul>Packages</ul>
+            </div>
+        </nav>
+        <div class="heroText">
+            <p>Your Ultimate Travel Partner</p>
+            <h1>Explore the World, Unwrap the Adventure</h1>
+        </div>
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide"><img src="images/firstImage.png"></li>
+                  <li class="splide__slide"><img src="images/secondImage.png"></li>
+                  <li class="splide__slide"><img src="images/thirdImage.png"></li>
+
+              </ul>
+        </div>
+    </section>
+
+    <section class="promotion">
+        <div style="display: flex; flex-direction: column;">
+            <p class="promotionTag">Promotion</p>
+            <h2 class="promotionTitle">
+                We Provide You Best Europe Sightseeing Tours
+            </h2>
+            <p class="promotionDescription">You can seamlessly plan your trips, whether it's booking comfortable accommodations or discovering exciting activities. We're dedicated to providing you with a wide range of options and the best deals to make your travel dreams a reality.</p>
+        </div>
+        <img src="images/promotionImage.png" />
+    </section>
+
+    <section class="lastMinute">
+        <h2 class="lastMinuteHeading">
+            Last minute offers
+        </h2>
+        <div class="lastMinuteOffers">
+            <div style="display: flex; flex-direction: column;">
+                <img class="lastMinuteImage" src="images/lastMinute1.png" />
+                <h3 class="lastMinuteTitle">Switzerland</h3>
+                <p class="lastMinuteDescription">
+                    Embrace Switzerland's breathtaking alpine landscapes.
+                </p>
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 20px; align-items: center;">
+                <p>1,100 $</p>
+                <p><img src="images/star.svg"> 5.0</p>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
