@@ -32,7 +32,7 @@
             if(i == 3){
                 i = 0;
             }
-        }, 3000);
+        }, 5000);
 
     </script>
 
@@ -50,53 +50,56 @@
 </head>
 <body>
 
-    <section class="splide" id="splide1">
-        <nav>
-            <ul><img class="logo" src="images/logo.svg"></ul>
-            <div class="navigation">
-                <ul class="navItem">Home</ul>
-                <ul class="navItem">About</ul>
-                <ul class="navItem">Services</ul>
-                <ul class="navItem">Packages</ul>
+    <header>
+        <section class="splide" id="splide1">
+            <nav>
+                <ul><img class="logo" src="images/logo.svg"></ul>
+                <div class="navigation">
+                    <ul class="navItem">Home</ul>
+                    <ul class="navItem">About</ul>
+                    <ul class="navItem">Services</ul>
+                    <ul class="navItem">Packages</ul>
+                </div>
+            </nav>
+            <div class="heroText">
+                <p class="heroDescription">Your Ultimate Travel Partner</p>
+                <h1 class="heroHeading">Explore the World, Unwrap the Adventure</h1>
             </div>
-        </nav>
-        <div class="heroText">
-            <p class="heroDescription">Your Ultimate Travel Partner</p>
-            <h1>Explore the World, Unwrap the Adventure</h1>
-        </div>
-        <div class="splide__track">
-              <ul class="splide__list">
-                  <li class="splide__slide"><img src="images/firstImage.png"></li>
-                  <li class="splide__slide"><img src="images/secondImage.png"></li>
-                  <li class="splide__slide"><img src="images/thirdImage.png"></li>
-              </ul>
-        </div>
-    </section>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="images/firstImage.png"></li>
+                    <li class="splide__slide"><img src="images/secondImage.png"></li>
+                    <li class="splide__slide"><img src="images/thirdImage.png"></li>
+                </ul>
+            </div>
+        </section>
+    </header>
 
     <section class="promotion">
-        <div class="flex flex-col">
-            <p class="promotionTag">Promotion</p>
+        <div class="flex flex-col gap-3 w-[80%]">
+            <span class="promotionTag">Promotion</span>
             <h2 class="promotionTitle">
                 We Provide You Best Europe Sightseeing Tours
             </h2>
             <p class="promotionDescription">You can seamlessly plan your trips, whether it's booking comfortable accommodations or discovering exciting activities. We're dedicated to providing you with a wide range of options and the best deals to make your travel dreams a reality.</p>
+
         </div>
         <img src="images/promotionImage.png" />
     </section>
 
-    <section class="lastMinute">
-        <h2 class="lastMinuteHeading">
+    <section class="travelDestination">
+        <h2 class="travelDestinationHeading">
             Last minute offers
         </h2>
         <section class="splide" id="splide2">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <div class="lastMinuteOffers ">
+                        <div class="travelDestinationCard m-auto">
                             <div class="flex flex-col self-stretch gap-[16px]">
-                                <img class="lastMinuteImage" src="images/lastMinute1.png" />
-                                <h3 class="lastMinuteTitle">Switzerland</h3>
-                                <p class="lastMinuteDescription">
+                                <img class="travelDestinationImage" src="images/switzerland.png" />
+                                <h3 class="travelDestinationTitle">Switzerland</h3>
+                                <p class="travelDestinationDescription">
                                     Embrace Switzerland's breathtaking alpine landscapes.
                                 </p>
                             </div>
@@ -107,11 +110,11 @@
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <div class="lastMinuteOffers">
+                        <div class="travelDestinationCard">
                             <div class="flex flex-col self-stretch gap-[16px]">
-                                <img class="lastMinuteImage" src="images/lastMinute1.png" />
-                                <h3 class="lastMinuteTitle">Paris</h3>
-                                <p class="lastMinuteDescription">
+                                <img class="travelDestinationImage" src="images/paris.png" />
+                                <h3 class="travelDestinationTitle">Paris</h3>
+                                <p class="travelDestinationDescription">
                                     In Paris, immerse yourself in timeless elegance.
                                 </p>
                             </div>
@@ -122,11 +125,11 @@
                         </div>
                     </li>
                     <li class="splide__slide">
-                        <div class="lastMinuteOffers">
+                        <div class="travelDestinationCard">
                             <div class="flex flex-col self-stretch gap-[16px]">
-                                <img class="lastMinuteImage" src="images/lastMinute1.png" />
-                                <h3 class="lastMinuteTitle">London</h3>
-                                <p class="lastMinuteDescription">
+                                <img class="travelDestinationImage" src="images/london.png" />
+                                <h3 class="travelDestinationTitle">London</h3>
+                                <p class="travelDestinationDescription">
                                     London beckons with its rich history, a modern metropolis.
                                 </p>
                             </div>
@@ -142,13 +145,13 @@
     </section>
 
     <section class="travelDestination">
-        <div class="travelDestinationHeading">
+        <h2 class="travelDestinationHeading">
             Travel Destinations
-        </div>
+        </h2>
         <div class="flex flex-wrap justify-center">
             <div class="travelDestinationCard">
                 <div class="flex flex-col self-stretch gap-[16px]">
-                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <img class="travelDestinationImage" src="images/zagreb.png" />
                     <div class="flex items-center gap-5">
                         <span class="price">1,100 $</span>
                         <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
@@ -163,14 +166,14 @@
     
             <div class="travelDestinationCard">
                 <div class="flex flex-col self-stretch gap-[16px]">
-                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <img class="travelDestinationImage" src="images/london.png" />
                     <div class="flex items-center gap-5">
                         <span class="price">1,100 $</span>
                         <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
                     </div>
-                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <h3 class="travelDestinationTitle">London</h3>
                     <p class="travelDestinationDescription">
-                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                        London beckons with its rich history, a modern metropolis.
                     </p>
                 </div>
             </div>
@@ -178,14 +181,14 @@
             
             <div class="travelDestinationCard">
                 <div class="flex flex-col self-stretch gap-[16px]">
-                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <img class="travelDestinationImage" src="images/hamburg.png" />
                     <div class="flex items-center gap-5">
                         <span class="price">1,100 $</span>
                         <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
                     </div>
-                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <h3 class="travelDestinationTitle">Hamburg</h3>
                     <p class="travelDestinationDescription">
-                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                        Hamburg invites you to its bustling port city with a unique maritime heritage, modern architecture, and a culinary scene that will tantalize your taste buds.
                     </p>
                 </div>
             </div>
@@ -193,14 +196,14 @@
     
             <div class="travelDestinationCard">
                 <div class="flex flex-col self-stretch gap-[16px]">
-                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <img class="travelDestinationImage" src="images/switzerland.png" />
                     <div class="flex items-center gap-5">
                         <span class="price">1,100 $</span>
                         <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
                     </div>
-                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <h3 class="travelDestinationTitle">Switzerland</h3>
                     <p class="travelDestinationDescription">
-                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                        Embrace Switzerland's breathtaking alpine landscapes.
                     </p>
                 </div>
             </div>
@@ -208,14 +211,14 @@
     
             <div class="travelDestinationCard">
                 <div class="flex flex-col self-stretch gap-[16px]">
-                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <img class="travelDestinationImage" src="images/paris.png" />
                     <div class="flex items-center gap-5">
                         <span class="price">1,100 $</span>
                         <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
                     </div>
-                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <h3 class="travelDestinationTitle">Paris</h3>
                     <p class="travelDestinationDescription">
-                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                        In Paris, immerse yourself in timeless elegance, from iconic landmarks to exquisite cuisine, a city that epitomizes romance and culture.
                     </p>
                 </div>
             </div>
@@ -223,14 +226,14 @@
     
             <div class="travelDestinationCard">
                 <div class="flex flex-col self-stretch gap-[16px]">
-                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <img class="travelDestinationImage" src="images/rome.png" />
                     <div class="flex items-center gap-5">
                         <span class="price">1,100 $</span>
                         <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
                     </div>
-                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <h3 class="travelDestinationTitle">Rome</h3>
                     <p class="travelDestinationDescription">
-                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                        Rome, the eternal city, where ancient ruins stand testament to a rich history.
                     </p>
                 </div>
             </div>    
@@ -238,5 +241,44 @@
         </div>
       
     </section>
+
+    <section class="stories pt-[80px]">
+        <div class="flex flex-col items-center gap-[8px]">
+            <span class="promotionTag">Stories</span>
+            <h2 class="travelDestinationHeading">
+                See what our clients say about us
+            </h2>
+        </div>
+
+        <div class="storyContainer">
+            <p class="storyDescription">
+                I recently used this travel website to plan my vacation, and I must say, it exceeded my expectations! The variety of options and deals available allowed me to find the perfect itinerary within my budget. I highly recommend this platform to fellow travelers seeking convenience and a seamless booking experience.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="flex flex-wrap p-[20%] width-[80%] gap-[15%]">
+            <div class="flex flex-col items-start">
+                <img src="images/logo_black.svg" />
+                <span class="footerText">Your Ultimate Travel partner</span>
+            </div>
+            <div class="flex flex-col gap-[8px]">
+                <h3 class="footerHeading">Company</h3>
+                <a class="footerText">Maldives</a>
+                <a class="footerText">Los Angeles</a>
+                <a class="footerText">Las Vegas</a>
+                <a class="footerText">Toronto</a>
+            </div>
+            <div class="flex flex-col gap-[8px]">
+                <h3 class="footerHeading">Join our Newsletter</h3>
+                <div class="flex gap-2" >
+                    <input type="email" placeholder="Your e-mail">
+                    <a href="#" class="button"><p class="learnMore">Submit</p></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

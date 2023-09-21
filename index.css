@@ -6,6 +6,41 @@ img[src*="star"] {
     transform: scale(0.5);
 }
 
+img[src*="logo_black"] {
+    transform: scale(0.5);
+}
+
+.splide__arrow{
+    display: none;
+}
+
+.splide__pagination__page{
+    display: none;
+}
+
+button{
+    display: inline-flex;
+    padding: 20px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    background: #DF6951;
+    margin-top: 15px;
+    width: 170px;
+}
+
+.learnMore{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
 nav{
     position: absolute;
     z-index: 1;
@@ -41,6 +76,17 @@ nav{
     text-transform: uppercase;
 }
 
+.navItem:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navItem:click{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
 .splide{
     position: relative;
 }
@@ -58,7 +104,7 @@ nav{
     z-index: 1;
 }
 
-.splide h1{
+.heroHeading{
     width: 100%;
     color: #FFF;
     text-align: center;
@@ -88,6 +134,7 @@ nav{
     flex-wrap: wrap;
 }
 
+
 .promotionTag{
     color: #DF6951;
     font-family: Inter;
@@ -100,7 +147,7 @@ nav{
 }
 
 .promotionTitle{
-    width: 870px;
+    width: 100%;
     color: #222;
     font-family: Poppins;
     font-size: 64px;
@@ -109,8 +156,10 @@ nav{
     line-height: 68px; /* 106.25% */
 }
 
+
+
 .promotionDescription{
-    width: 610px;
+    width: 100%;
     color: #222;
     font-family: Inter;
     font-size: 20px;
@@ -122,71 +171,8 @@ nav{
 .promotionImage{
     width: 420px;
     height: 420px;
-    flex-shrink: 0;
     border-radius: 420px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-}
-
-.lastMinute{
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-shrink: 0;
-    background: #FAFAFA;
-}
-
-.lastMinuteHeading{
-    width: 38%;
-    color: #222;
-    text-align: center;
-    margin: auto;
-    font-family: Poppins;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 106.25%;
-    padding-bottom: 64px;
-}
-
-.lastMinuteOffers{
-    display: flex;
-    width: fit-content;
-    padding: 32px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    border-radius: 12px;
-    background: #FFF;
-    box-shadow: 0px 4px 40px 0px rgba(126, 126, 126, 0.15);
-}
-
-.lastMinuteImage{
-    width: 416px;
-    height: 340px;
-    align-self: stretch;
-    border-radius: 8px;
-}
-
-
-.lastMinuteTitle{
-    color: #222;
-    font-family: Poppins;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px; /* 111.111% */
-}
-
-.lastMinuteDescription{
-    align-self: stretch;
-    color: #222;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 120% */
 }
 
 .price{
@@ -212,8 +198,9 @@ nav{
 }
 
 .travelDestinationHeading{
-    width: 38%;
+    width: 80%;
     margin: auto;
+    margin-bottom: 50px;
     color: #222;
     text-align: center;
     font-family: Poppins;
@@ -262,3 +249,133 @@ nav{
     font-weight: 400;
     line-height: 24px; /* 120% */
 }
+
+.storyContainer{
+    display: flex;
+    margin: auto;
+    width: 740px;
+    padding: 64px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(126, 126, 126, 0.15);
+}
+
+.storyDescription{
+    color: #222;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+}
+
+.footerHeading{
+    color: #222;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+}
+
+.footerText{
+    color: #222;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+@media only screen and (max-width: 1280px) {
+    .promotion{
+        padding: 100px;
+    }
+
+
+    .heroHeading{
+        width: 100%;
+        color: #FFF;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 38px; /* 95% */
+        letter-spacing: -1px;
+    }
+    
+    .heroDescription{
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 125% */
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+
+    
+  }
+
+
+@media only screen and (max-width: 640px) {
+    .logo{
+        display: none;
+    }
+
+    nav{
+        top: 10px;
+        justify-content: initial !important;
+    }
+
+    .navigation{
+        flex-direction: column;
+        padding: 5px;
+        gap: 5px;
+    }
+    
+    .promotion{
+        padding: 15px;
+    }
+
+    .promotionTitle{
+        width: 100%;
+        color: #222;
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px; /* 106.25% */
+    }
+
+    .heroHeading{
+        display: none;
+    }
+    
+    .heroDescription{
+        display: none;
+    }
+
+    .travelDestinationHeading{
+ 
+        margin: auto;
+        padding-top: 20px;
+        margin-bottom: 25px;
+        color: #222;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 34px; /* 106.25% */
+    }
+
+    
+  }
