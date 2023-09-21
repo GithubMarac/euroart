@@ -2,6 +2,10 @@
     background: #FFF;
 }
 
+img[src*="star"] {
+    transform: scale(0.5);
+}
+
 nav{
     position: absolute;
     z-index: 1;
@@ -26,7 +30,7 @@ nav{
     gap: 40px;
 }
 
-.navigation ul{
+.navItem{
     color: #FFF;
     font-family: Inter;
     font-size: 16px;
@@ -66,7 +70,7 @@ nav{
     letter-spacing: -1.6px;
 }
 
-.splide p{
+.heroDescription{
     color: #FFF;
     text-align: center;
     font-family: Inter;
@@ -124,21 +128,38 @@ nav{
 }
 
 .lastMinute{
-    width: 1920px;
-    height: 1012px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-shrink: 0;
     background: #FAFAFA;
 }
 
 .lastMinuteHeading{
-    width: 740px;
+    width: 38%;
     color: #222;
     text-align: center;
+    margin: auto;
     font-family: Poppins;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
-    line-height: 68px; /* 106.25% */
+    line-height: 106.25%;
+    padding-bottom: 64px;
+}
+
+.lastMinuteOffers{
+    display: flex;
+    width: fit-content;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(126, 126, 126, 0.15);
 }
 
 .lastMinuteImage{
@@ -159,6 +180,80 @@ nav{
 }
 
 .lastMinuteDescription{
+    align-self: stretch;
+    color: #222;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+}
+
+.price{
+    color: #222;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    text-transform: capitalize;
+}
+
+.review{
+    color: #222;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 125% */
+    text-transform: capitalize;
+}
+
+.travelDestinationHeading{
+    width: 38%;
+    margin: auto;
+    color: #222;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px; /* 106.25% */
+}
+
+.travelDestinationCard{
+    display: flex;
+    width: 480px;
+    height: 620px;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 40px 0px rgba(126, 126, 126, 0.15);
+}
+
+.travelDestinationImage{
+    height: 340px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 8px;
+}
+
+.travelDestinationTitle{
+    color: #222;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+}
+
+.travelDestinationDescription{
     align-self: stretch;
     color: #222;
     font-family: Inter;

@@ -7,7 +7,33 @@
 
     <script type="module">
         import splidejssplide from 'https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/+esm'
-        new splidejssplide( '.splide' ).mount();
+        let splide = new splidejssplide( '#splide1', {
+        rewind: true,
+        type    : 'fade',
+        perPage : 1,
+        } ).mount();
+
+        let splide2 = new splidejssplide( '#splide2', {
+        rewind: true,
+        perPage : 3,
+        breakpoints: {
+            1500: {
+			perPage: 2,
+		},
+            1000: {
+			perPage: 1,
+		},
+        }}).mount();
+
+        let i = 1;
+        var myInterval = setInterval(function() {
+            splide.go(i);
+            i++;
+            if(i == 3){
+                i = 0;
+            }
+        }, 3000);
+
     </script>
 
     <link href="
@@ -17,23 +43,25 @@
     <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link href="index.css" rel="stylesheet">
     <script type="module" src="index.js"></script>
 </head>
 <body>
 
-    <section class="splide">
+    <section class="splide" id="splide1">
         <nav>
             <ul><img class="logo" src="images/logo.svg"></ul>
             <div class="navigation">
-                <ul>Home</ul>
-                <ul>About</ul>
-                <ul>Services</ul>
-                <ul>Packages</ul>
+                <ul class="navItem">Home</ul>
+                <ul class="navItem">About</ul>
+                <ul class="navItem">Services</ul>
+                <ul class="navItem">Packages</ul>
             </div>
         </nav>
         <div class="heroText">
-            <p>Your Ultimate Travel Partner</p>
+            <p class="heroDescription">Your Ultimate Travel Partner</p>
             <h1>Explore the World, Unwrap the Adventure</h1>
         </div>
         <div class="splide__track">
@@ -41,13 +69,12 @@
                   <li class="splide__slide"><img src="images/firstImage.png"></li>
                   <li class="splide__slide"><img src="images/secondImage.png"></li>
                   <li class="splide__slide"><img src="images/thirdImage.png"></li>
-
               </ul>
         </div>
     </section>
 
     <section class="promotion">
-        <div style="display: flex; flex-direction: column;">
+        <div class="flex flex-col">
             <p class="promotionTag">Promotion</p>
             <h2 class="promotionTitle">
                 We Provide You Best Europe Sightseeing Tours
@@ -61,50 +88,155 @@
         <h2 class="lastMinuteHeading">
             Last minute offers
         </h2>
-        <div style="display:flex; flex-wrap: wrap;">
-            <div class="lastMinuteOffers">
-                <div style="display: flex; flex-direction: column;">
-                    <img class="lastMinuteImage" src="images/lastMinute1.png" />
-                    <h3 class="lastMinuteTitle">Switzerland</h3>
-                    <p class="lastMinuteDescription">
-                        Embrace Switzerland's breathtaking alpine landscapes.
-                    </p>
-                </div>
-                <div style="display: flex; align-items: flex-start; gap: 20px; align-items: center;">
-                    <p>1,100 $</p>
-                    <p><img src="images/star.svg"> 5.0</p>
-                </div>
-
+        <section class="splide" id="splide2">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <div class="lastMinuteOffers ">
+                            <div class="flex flex-col self-stretch gap-[16px]">
+                                <img class="lastMinuteImage" src="images/lastMinute1.png" />
+                                <h3 class="lastMinuteTitle">Switzerland</h3>
+                                <p class="lastMinuteDescription">
+                                    Embrace Switzerland's breathtaking alpine landscapes.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <span class="price">1,100 $</span>
+                                <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="lastMinuteOffers">
+                            <div class="flex flex-col self-stretch gap-[16px]">
+                                <img class="lastMinuteImage" src="images/lastMinute1.png" />
+                                <h3 class="lastMinuteTitle">Paris</h3>
+                                <p class="lastMinuteDescription">
+                                    In Paris, immerse yourself in timeless elegance.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <span class="price">1,100 $</span>
+                                <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div class="lastMinuteOffers">
+                            <div class="flex flex-col self-stretch gap-[16px]">
+                                <img class="lastMinuteImage" src="images/lastMinute1.png" />
+                                <h3 class="lastMinuteTitle">London</h3>
+                                <p class="lastMinuteDescription">
+                                    London beckons with its rich history, a modern metropolis.
+                                </p>
+                            </div>
+                            <div class="flex items-center gap-5">
+                                <span class="price">1,100 $</span>
+                                <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="lastMinuteOffers">
-                <div style="display: flex; flex-direction: column;">
-                    <img class="lastMinuteImage" src="images/lastMinute1.png" />
-                    <h3 class="lastMinuteTitle">Paris</h3>
-                    <p class="lastMinuteDescription">
-                        In Paris, immerse yourself in timeless elegance.
-                    </p>
-                </div>
-                <div style="display: flex; align-items: flex-start; gap: 20px; align-items: center;">
-                    <p>1,100 $</p>
-                    <p><img src="images/star.svg"> 5.0</p>
-                </div>
+        </section>
+    </section>
 
-            </div>
-            <div class="lastMinuteOffers">
-                <div style="display: flex; flex-direction: column;">
-                    <img class="lastMinuteImage" src="images/lastMinute1.png" />
-                    <h3 class="lastMinuteTitle">London</h3>
-                    <p class="lastMinuteDescription">
-                        London beckons with its rich history, a modern metropolis.
-                    </p>
-                </div>
-                <div style="display: flex; align-items: flex-start; gap: 20px; align-items: center;">
-                    <p>1,100 $</p>
-                    <p><img src="images/star.svg"> 5.0</p>
-                </div>
-
-            </div>
+    <section class="travelDestination">
+        <div class="travelDestinationHeading">
+            Travel Destinations
         </div>
+        <div class="flex flex-wrap justify-center">
+            <div class="travelDestinationCard">
+                <div class="flex flex-col self-stretch gap-[16px]">
+                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <div class="flex items-center gap-5">
+                        <span class="price">1,100 $</span>
+                        <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
+                    </div>
+                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <p class="travelDestinationDescription">
+                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                    </p>
+                </div>
+            </div>
+            
+    
+            <div class="travelDestinationCard">
+                <div class="flex flex-col self-stretch gap-[16px]">
+                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <div class="flex items-center gap-5">
+                        <span class="price">1,100 $</span>
+                        <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
+                    </div>
+                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <p class="travelDestinationDescription">
+                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                    </p>
+                </div>
+            </div>
+    
+            
+            <div class="travelDestinationCard">
+                <div class="flex flex-col self-stretch gap-[16px]">
+                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <div class="flex items-center gap-5">
+                        <span class="price">1,100 $</span>
+                        <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
+                    </div>
+                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <p class="travelDestinationDescription">
+                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                    </p>
+                </div>
+            </div>
+    
+    
+            <div class="travelDestinationCard">
+                <div class="flex flex-col self-stretch gap-[16px]">
+                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <div class="flex items-center gap-5">
+                        <span class="price">1,100 $</span>
+                        <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
+                    </div>
+                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <p class="travelDestinationDescription">
+                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                    </p>
+                </div>
+            </div>
+    
+    
+            <div class="travelDestinationCard">
+                <div class="flex flex-col self-stretch gap-[16px]">
+                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <div class="flex items-center gap-5">
+                        <span class="price">1,100 $</span>
+                        <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
+                    </div>
+                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <p class="travelDestinationDescription">
+                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                    </p>
+                </div>
+            </div>
+    
+    
+            <div class="travelDestinationCard">
+                <div class="flex flex-col self-stretch gap-[16px]">
+                    <img class="travelDestinationImage" src="images/lastMinute1.png" />
+                    <div class="flex items-center gap-5">
+                        <span class="price">1,100 $</span>
+                        <div class="flex items-center price"><img src="images/star.svg"><span>5.0</span></div>
+                    </div>
+                    <h3 class="travelDestinationTitle">Zagreb</h3>
+                    <p class="travelDestinationDescription">
+                        Discover the charm of Zagreb, a blend of historic architecture and vibrant cultural scenes set against the picturesque backdrop of Croatia.
+                    </p>
+                </div>
+            </div>    
+
+        </div>
+      
     </section>
 </body>
 </html>
