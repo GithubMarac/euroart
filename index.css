@@ -11,7 +11,11 @@ img[src*="star"] {
 }
 
 .splide__pagination__page{
-    display: none;
+    background: white !important;
+}
+
+.splide__pagination__page.is-active{
+    background: #DF6951 !important;
 }
 
 .button{
@@ -34,17 +38,6 @@ img[src*="star"] {
     background: #7f2816;
 }
 
-
-.learnMore{
-    color: #FFF;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px; /* 125% */
-    letter-spacing: 1.6px;
-    text-transform: uppercase;
-}
 
 nav{
     position: absolute;
@@ -177,6 +170,18 @@ nav{
     border-radius: 420px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
+
+.learnMore{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
 
 .price{
     color: #222;
