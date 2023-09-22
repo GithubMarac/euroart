@@ -6,10 +6,6 @@ img[src*="star"] {
     transform: scale(0.5);
 }
 
-img[src*="logo_black"] {
-    transform: scale(0.5);
-}
-
 .splide__arrow{
     display: none;
 }
@@ -18,7 +14,7 @@ img[src*="logo_black"] {
     display: none;
 }
 
-button{
+.button{
     display: inline-flex;
     padding: 20px 24px;
     justify-content: center;
@@ -29,6 +25,15 @@ button{
     margin-top: 15px;
     width: 170px;
 }
+
+.button:hover{
+    background: #7f2816;
+}
+
+.button:click{
+    background: #7f2816;
+}
+
 
 .learnMore{
     color: #FFF;
@@ -78,12 +83,10 @@ nav{
 
 .navItem:hover{
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .navItem:click{
     text-decoration: underline;
-    cursor: pointer;
 }
 
 
@@ -250,6 +253,10 @@ nav{
     line-height: 24px; /* 120% */
 }
 
+.stories{
+    padding-top: 80px;
+}
+
 .storyContainer{
     display: flex;
     margin: auto;
@@ -291,6 +298,25 @@ nav{
     line-height: 24px; /* 150% */
 }
 
+.footerText:hover{
+    text-decoration: underline;
+}
+
+.footerText:click{
+    text-decoration: underline;
+}
+
+#email{
+    display: flex;
+    width: 316px;
+    padding: 16px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+}
+
 @media only screen and (max-width: 1280px) {
     .promotion{
         padding: 100px;
@@ -321,7 +347,9 @@ nav{
         text-transform: uppercase;
     }
 
-    
+    .promotionImage{
+        margin-top: 35px;
+    }
   }
 
 
@@ -392,6 +420,20 @@ nav{
         font-style: normal;
         font-weight: 600;
         line-height: 34px; /* 106.25% */
+    }
+
+    .stories{
+        padding-top: 10px;
+    }
+
+    .storyContainer{
+        width: initial;
+        padding: 32px;
+
+    }
+
+    #email{
+        width: 240px;
     }
 
     
