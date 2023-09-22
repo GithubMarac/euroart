@@ -162,7 +162,7 @@ nav{
 
 
 .promotionDescription{
-    width: 100%;
+    width: 610px;
     color: #222;
     font-family: Inter;
     font-size: 20px;
@@ -203,6 +203,7 @@ nav{
 .travelDestinationHeading{
     width: 80%;
     margin: auto;
+    margin-top: 80px;
     margin-bottom: 50px;
     color: #222;
     text-align: center;
@@ -254,7 +255,7 @@ nav{
 }
 
 .stories{
-    padding-top: 80px;
+    margin-top: 80px;
 }
 
 .storyContainer{
@@ -350,6 +351,11 @@ nav{
     .promotionImage{
         margin-top: 35px;
     }
+
+    .promotionDescription{
+        width: 100%;
+    }
+
   }
 
 
@@ -409,7 +415,6 @@ nav{
     }
 
     .travelDestinationHeading{
- 
         margin: auto;
         padding-top: 20px;
         margin-bottom: 25px;
