@@ -331,6 +331,7 @@ nav{
     }
 
     nav{
+        left: 15px;
         top: 10px;
         justify-content: initial !important;
     }
@@ -345,6 +346,10 @@ nav{
         padding: 15px;
     }
 
+    .promotionImage{
+        display: none;
+    }
+
     .promotionTitle{
         width: 100%;
         color: #222;
@@ -353,6 +358,18 @@ nav{
         font-style: normal;
         font-weight: 500;
         line-height: 34px; /* 106.25% */
+    }
+
+    .travelDestinationCard{
+        width: 100%;
+    }
+
+    .travelDestinationImage{
+        height: initial;
+    }
+
+    .travelDestinationCard{
+        height: initial;
     }
 
     .heroHeading{
